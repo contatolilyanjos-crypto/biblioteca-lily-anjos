@@ -1,5 +1,6 @@
 import Image from "next/image";
 import FloralCorner from "./FloralCorner";
+import { colecao } from "@/data/products";
 
 const destaques = [
   "5 volumes digitais",
@@ -59,7 +60,7 @@ export default function Hero() {
         <div className="relative mx-auto w-full max-w-sm md:max-w-none">
           <div className="overflow-hidden rounded-2xl border border-(--color-card-border) bg-(--color-card) shadow-2xl">
             <Image
-              src="/produtos/colecao-completa.png"
+              src={colecao.imagemHero}
               alt="Coleção completa Biblioteca Lily Anjos: os cinco volumes do Guia do Decorador e Florista lado a lado, cercados por flores e folhagens naturais."
               width={1254}
               height={1254}

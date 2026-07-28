@@ -21,6 +21,7 @@ export const colecao = {
   selo: "MELHOR ESCOLHA • ECONOMIZE R$ 74,60",
   descricao:
     "Flores de corte, folhagens, sementes, frutos, elementos desidratados, plantas de vaso e frutas aplicadas à decoração de eventos.",
+  imagemHero: "/produtos/colecao-abertura.png",
   imagem: "/produtos/colecao-completa.png",
   precoAnterior: "De R$ 299,50",
   precoAVista: "Por R$ 224,90 à vista",
