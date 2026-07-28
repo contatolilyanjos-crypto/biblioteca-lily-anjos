@@ -1,6 +1,7 @@
 import Image from "next/image";
 import type { Volume } from "@/data/products";
 import CheckoutButton from "./CheckoutButton";
+import Carousel from "./Carousel";
 
 export default function VolumeCard({ volume }: { volume: Volume }) {
   return (
@@ -23,6 +24,23 @@ export default function VolumeCard({ volume }: { volume: Volume }) {
       <p className="mt-2 flex-1 text-center text-sm text-(--color-text)">
         {volume.descricao}
       </p>
+
+      {volume.interiores.length > 0 && (
+        <details className="group mt-4">
+          <summary className="cursor-pointer list-none text-center text-xs font-semibold tracking-wide text-(--color-gold) transition-colors hover:text-(--color-title)">
+            VER POR DENTRO
+            <span className="ml-1 inline-block transition-transform group-open:rotate-180">
+              ▾
+            </span>
+          </summary>
+          <div className="mt-3 mx-auto max-w-[260px]">
+            <Carousel
+              images={volume.interiores}
+              label={`Páginas internas do ${volume.titulo}`}
+            />
+          </div>
+        </details>
+      )}
 
       <div className="mt-4 text-center">
         <p className="font-display text-xl text-(--color-title)">

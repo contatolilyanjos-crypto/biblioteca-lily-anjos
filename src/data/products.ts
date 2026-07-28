@@ -1,3 +1,8 @@
+export type InteriorImage = {
+  src: string;
+  alt: string;
+};
+
 export type Volume = {
   slug: string;
   numero: number;
@@ -8,6 +13,7 @@ export type Volume = {
   parcelamento: string;
   linkCheckout: string;
   ctaLabel: string;
+  interiores: InteriorImage[];
 };
 
 export const colecao = {
@@ -35,6 +41,24 @@ export const volumes: Volume[] = [
     parcelamento: "ou 12x de R$ 6,20",
     linkCheckout: "https://pay.hotmart.com/L106908323G?off=9ype1fn2",
     ctaLabel: "COMPRAR VOLUME 1",
+    interiores: [
+      {
+        src: "/interiores/volume-1/01-indice-flores-brancas.png",
+        alt: "Página de índice visual do Volume 1 com fotos de flores brancas de corte, cada uma com nome e número de página.",
+      },
+      {
+        src: "/interiores/volume-1/02-indice-flores-rosas.png",
+        alt: "Página de índice visual do Volume 1 com fotos de flores rosa e pink de corte, cada uma com nome e número de página.",
+      },
+      {
+        src: "/interiores/volume-1/03-ficha-bouvardia-tons.png",
+        alt: "Ficha técnica da Bouvardia mostrando foto, identificação, tons disponíveis (branco, rosa, salmão, vermelho), aplicabilidade e cuidados.",
+      },
+      {
+        src: "/interiores/volume-1/04-ficha-gypsophila.png",
+        alt: "Ficha técnica da Gypsophila (mosquitinho) com foto, identificação, tamanho, uso em projetos e dica de cuidado.",
+      },
+    ],
   },
   {
     slug: "volume-2",
@@ -47,6 +71,24 @@ export const volumes: Volume[] = [
     parcelamento: "ou 12x de R$ 6,20",
     linkCheckout: "https://pay.hotmart.com/A106908702D?off=nchlxtij",
     ctaLabel: "COMPRAR VOLUME 2",
+    interiores: [
+      {
+        src: "/interiores/volume-2/01-ficha-folhagem-alecrim.png",
+        alt: "Ficha técnica da folhagem Alecrim com foto, identificação, aparência, uso em projetos e dica de cuidado.",
+      },
+      {
+        src: "/interiores/volume-2/02-ficha-folhagem-aspargo-ming.png",
+        alt: "Ficha técnica da folhagem Aspargo Ming com foto, identificação, aparência e cuidados.",
+      },
+      {
+        src: "/interiores/volume-2/03-ficha-folhagem-palmeira.png",
+        alt: "Ficha técnica da folhagem Palmeira com foto, identificação, aparência e cuidados.",
+      },
+      {
+        src: "/interiores/volume-2/04-ficha-peperomia-melancia.png",
+        alt: "Ficha técnica da folhagem Peperômia Melancia com foto, identificação, aparência e cuidados.",
+      },
+    ],
   },
   {
     slug: "volume-3",
@@ -59,6 +101,24 @@ export const volumes: Volume[] = [
     parcelamento: "ou 12x de R$ 6,20",
     linkCheckout: "https://pay.hotmart.com/Q106908821K?off=8clssgdp",
     ctaLabel: "COMPRAR VOLUME 3",
+    interiores: [
+      {
+        src: "/interiores/volume-3/01-ficha-assa-peixe-desidratado.png",
+        alt: "Ficha técnica do Assa-peixe desidratado com foto, identificação, comercialização e uso em projetos.",
+      },
+      {
+        src: "/interiores/volume-3/02-ficha-capim-pinguelo.png",
+        alt: "Ficha técnica do Capim pinguelo com foto, identificação, comercialização e uso em projetos.",
+      },
+      {
+        src: "/interiores/volume-3/03-ficha-estrelinha.png",
+        alt: "Ficha técnica da Estrelinha (semente de Pau Jaú colada) com foto, identificação e uso em projetos.",
+      },
+      {
+        src: "/interiores/volume-3/04-ficha-mileto.png",
+        alt: "Ficha técnica do Mileto com foto, identificação, cores naturais e tingidas, e uso em projetos.",
+      },
+    ],
   },
   {
     slug: "volume-4",
@@ -71,6 +131,24 @@ export const volumes: Volume[] = [
     parcelamento: "ou 12x de R$ 6,20",
     linkCheckout: "https://pay.hotmart.com/F106908936R?off=z70x8qoj",
     ctaLabel: "COMPRAR VOLUME 4",
+    interiores: [
+      {
+        src: "/interiores/volume-4/01-ficha-begonia-tons.png",
+        alt: "Ficha técnica da Begônia mostrando foto, identificação e as tonalidades encontradas no mercado: amarelo, branco, laranja e rosa.",
+      },
+      {
+        src: "/interiores/volume-4/02-ficha-hortensia-de-vaso-tons.png",
+        alt: "Ficha técnica da Hortênsia de Vaso com foto, identificação e tonalidades: azul, rosa, branco e lilás.",
+      },
+      {
+        src: "/interiores/volume-4/03-ficha-filodendro-xanadu.png",
+        alt: "Ficha técnica do Filodendro Xanadu com foto, identificação, porte, uso em projetos e cuidados.",
+      },
+      {
+        src: "/interiores/volume-4/04-ficha-samambaia-americana.png",
+        alt: "Ficha técnica da Samambaia Americana com foto, identificação, porte e cuidados.",
+      },
+    ],
   },
   {
     slug: "volume-5",
@@ -83,5 +161,32 @@ export const volumes: Volume[] = [
     parcelamento: "ou 12x de R$ 6,20",
     linkCheckout: "https://pay.hotmart.com/V106909031O?off=cz8jdnvz",
     ctaLabel: "COMPRAR VOLUME 5",
+    interiores: [
+      {
+        src: "/interiores/volume-5/01-ficha-abobora-mini.png",
+        alt: "Ficha técnica da Abóbora mini com foto, técnicas de utilização e cuidados de conservação.",
+      },
+      {
+        src: "/interiores/volume-5/02-ficha-carambola.png",
+        alt: "Ficha técnica da Carambola com foto, técnicas de utilização e cuidados de conservação.",
+      },
+      {
+        src: "/interiores/volume-5/03-ficha-limao-capeta.png",
+        alt: "Ficha técnica do Limão Capeta com foto, técnicas de utilização e cuidados de conservação.",
+      },
+      {
+        src: "/interiores/volume-5/04-arranjo-estilizado-mesa-citrica.png",
+        alt: "Exemplo de arranjo de mesa em tons de coral usando frutas cítricas, combinando flores e frutas na decoração de eventos.",
+      },
+    ],
   },
+];
+
+export const colecaoInteriores: InteriorImage[] = [
+  volumes[0].interiores[0],
+  volumes[0].interiores[2],
+  volumes[3].interiores[0],
+  volumes[3].interiores[1],
+  volumes[2].interiores[0],
+  volumes[4].interiores[3],
 ];

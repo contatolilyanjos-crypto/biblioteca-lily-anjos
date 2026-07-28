@@ -1,6 +1,7 @@
 import Image from "next/image";
-import { colecao, volumes } from "@/data/products";
+import { colecao, colecaoInteriores, volumes } from "@/data/products";
 import CheckoutButton from "./CheckoutButton";
+import Carousel from "./Carousel";
 
 export default function CollectionOffer() {
   return (
@@ -64,6 +65,22 @@ export default function CollectionOffer() {
                 confirmação do pagamento
               </p>
             </div>
+          </div>
+        </div>
+
+        <div className="mt-14 text-center">
+          <h3 className="font-display text-xl text-(--color-title) sm:text-2xl">
+            Veja como é por dentro
+          </h3>
+          <p className="mx-auto mt-2 max-w-md text-sm text-(--color-text)">
+            Fichas técnicas com fotos, tons disponíveis, cuidados e aplicações
+            — um exemplo de cada volume da coleção.
+          </p>
+          <div className="mx-auto mt-6 max-w-xs sm:max-w-sm">
+            <Carousel
+              images={colecaoInteriores}
+              label="Páginas internas da Biblioteca Lily Anjos"
+            />
           </div>
         </div>
       </div>
