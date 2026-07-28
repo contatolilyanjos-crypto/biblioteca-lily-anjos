@@ -35,6 +35,9 @@ export default function CollectionOffer() {
             <h2 className="font-display text-balance mt-4 text-2xl leading-tight text-(--color-title) sm:text-3xl md:text-4xl">
               {colecao.titulo}
             </h2>
+            <p className="font-display mt-1 text-sm tracking-[0.1em] text-(--color-muted)">
+              {colecao.subtitulo}
+            </p>
 
             <p className="mt-4 text-base leading-relaxed sm:text-lg">
               {colecao.descricao}

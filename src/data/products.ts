@@ -17,7 +17,8 @@ export type Volume = {
 };
 
 export const colecao = {
-  titulo: "Leve os cinco volumes da Biblioteca Lily Anjos",
+  titulo: "Leve o Guia do Decorador e Florista completo",
+  subtitulo: "Biblioteca Lily Anjos",
   selo: "MELHOR ESCOLHA • ECONOMIZE R$ 74,60",
   descricao:
     "Flores de corte, folhagens, sementes, frutos, elementos desidratados, plantas de vaso e frutas aplicadas à decoração de eventos.",

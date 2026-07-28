@@ -17,11 +17,11 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://biblioteca-lily-anjos.vercel.app"),
-  title: "Biblioteca Lily Anjos — Guia do Decorador e Florista",
+  title: "Guia do Decorador e Florista — Biblioteca Lily Anjos",
   description:
-    "Centenas de flores, folhagens e elementos da decoração de eventos reunidos em um só lugar. 5 volumes digitais, mais de 550 páginas, acesso imediato.",
+    "Guia do Decorador e Florista, da Biblioteca Lily Anjos: centenas de flores, folhagens e elementos da decoração de eventos reunidos em um só lugar. 5 volumes digitais, mais de 550 páginas, acesso imediato.",
   openGraph: {
-    title: "Biblioteca Lily Anjos — Guia do Decorador e Florista",
+    title: "Guia do Decorador e Florista — Biblioteca Lily Anjos",
     description:
       "Centenas de flores, folhagens e elementos da decoração de eventos reunidos em um só lugar.",
     locale: "pt_BR",

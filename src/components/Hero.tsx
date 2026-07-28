@@ -22,19 +22,18 @@ export default function Hero() {
 
       <div className="mx-auto grid max-w-5xl items-center gap-8 md:grid-cols-2 md:gap-12">
         <div className="order-2 text-center md:order-1 md:text-left">
-          <p
-            className="font-display animate-fade-up text-base tracking-[0.2em] text-(--color-gold) sm:text-lg"
+          <h1
+            className="font-display text-balance animate-fade-up text-3xl leading-tight text-(--color-title) sm:text-4xl md:text-5xl"
             style={{ animationDelay: "150ms" }}
+          >
+            Guia do Decorador e Florista
+          </h1>
+          <p
+            className="font-display animate-fade-up mt-2 text-sm tracking-[0.15em] text-(--color-muted) sm:text-base"
+            style={{ animationDelay: "225ms" }}
           >
             Biblioteca Lily Anjos
           </p>
-          <h1
-            className="font-display text-balance animate-fade-up mt-3 text-3xl leading-tight text-(--color-title) sm:text-4xl md:text-5xl"
-            style={{ animationDelay: "150ms" }}
-          >
-            Centenas de flores, folhagens e elementos da decoração de eventos
-            reunidos em um só lugar.
-          </h1>
           <p
             className="animate-fade-up mt-5 text-base leading-relaxed text-(--color-text) sm:text-lg"
             style={{ animationDelay: "300ms" }}
