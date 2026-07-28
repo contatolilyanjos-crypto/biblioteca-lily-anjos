@@ -2,14 +2,23 @@
 
 import { useRef, useState } from "react";
 import Image from "next/image";
-import type { InteriorImage } from "@/data/products";
+import type { CarouselImage } from "@/data/products";
 
 type Props = {
-  images: InteriorImage[];
+  images: CarouselImage[];
   label: string;
+  sizes?: string;
+  priority?: boolean;
+  className?: string;
 };
 
-export default function Carousel({ images, label }: Props) {
+export default function Carousel({
+  images,
+  label,
+  sizes = "(min-width: 768px) 420px, 90vw",
+  priority = false,
+  className = "",
+}: Props) {
   const [index, setIndex] = useState(0);
   const touchStartX = useRef<number | null>(null);
 
@@ -39,13 +48,13 @@ export default function Carousel({ images, label }: Props) {
 
   return (
     <div
-      className="relative"
+      className={`relative ${className}`}
       role="group"
       aria-roledescription="carrossel"
       aria-label={label}
     >
       <div
-        className="relative aspect-[1224/1584] w-full overflow-hidden rounded-xl border border-(--color-card-border) bg-white"
+        className="relative aspect-square w-full overflow-hidden rounded-xl border border-(--color-card-border) bg-(--color-card)"
         onTouchStart={onTouchStart}
         onTouchEnd={onTouchEnd}
       >
@@ -53,10 +62,10 @@ export default function Carousel({ images, label }: Props) {
           src={current.src}
           alt={current.alt}
           fill
-          sizes="(min-width: 768px) 420px, 90vw"
+          sizes={sizes}
           className="object-contain"
-          priority={index === 0}
-          loading={index === 0 ? undefined : "eager"}
+          priority={priority && index === 0}
+          loading={priority && index === 0 ? undefined : "eager"}
         />
       </div>
 

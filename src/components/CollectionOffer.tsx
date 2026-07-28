@@ -1,7 +1,14 @@
-import Image from "next/image";
-import { colecao, colecaoInteriores, volumes } from "@/data/products";
+import { colecao, volumes } from "@/data/products";
 import CheckoutButton from "./CheckoutButton";
 import Carousel from "./Carousel";
+
+const imagensCarrosselColecao = [
+  {
+    src: colecao.imagem,
+    alt: "Mockup dos cinco volumes da Biblioteca Lily Anjos, coleção completa do Guia do Decorador e Florista.",
+  },
+  ...volumes.flatMap((v) => v.imagensCarrossel),
+];
 
 export default function CollectionOffer() {
   return (
@@ -12,16 +19,11 @@ export default function CollectionOffer() {
       <div className="mx-auto max-w-5xl">
         <div className="grid items-center gap-8 md:grid-cols-2 md:gap-14">
           <div className="mx-auto w-full max-w-sm md:max-w-none md:order-2">
-            <div className="overflow-hidden rounded-2xl border border-(--color-card-border) bg-(--color-card) shadow-2xl">
-              <Image
-                src={colecao.imagem}
-                alt="Mockup dos cinco volumes da Biblioteca Lily Anjos, coleção completa do Guia do Decorador e Florista."
-                width={1254}
-                height={1254}
-                sizes="(min-width: 768px) 480px, 90vw"
-                className="h-auto w-full"
-              />
-            </div>
+            <Carousel
+              images={imagensCarrosselColecao}
+              label="Imagens da Biblioteca Lily Anjos completa"
+              sizes="(min-width: 768px) 480px, 90vw"
+            />
           </div>
 
           <div className="text-center md:order-1 md:text-left">
@@ -65,22 +67,6 @@ export default function CollectionOffer() {
                 confirmação do pagamento
               </p>
             </div>
-          </div>
-        </div>
-
-        <div className="mt-14 text-center">
-          <h3 className="font-display text-xl text-(--color-title) sm:text-2xl">
-            Veja como é por dentro
-          </h3>
-          <p className="mx-auto mt-2 max-w-md text-sm text-(--color-text)">
-            Fichas técnicas com fotos, tons disponíveis, cuidados e aplicações
-            — um exemplo de cada volume da coleção.
-          </p>
-          <div className="mx-auto mt-6 max-w-xs sm:max-w-sm">
-            <Carousel
-              images={colecaoInteriores}
-              label="Páginas internas da Biblioteca Lily Anjos"
-            />
           </div>
         </div>
       </div>
