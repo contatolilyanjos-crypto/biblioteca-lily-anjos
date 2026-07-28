@@ -1,3 +1,5 @@
+import Reveal from "./Reveal";
+
 const infos = [
   {
     icon: (
@@ -24,37 +26,41 @@ export default function AboutSection() {
       className="border-y border-(--color-card-border) bg-(--color-bg-soft) px-4 py-14 sm:px-6 md:py-20"
     >
       <div className="mx-auto max-w-3xl text-center">
-        <h2 className="font-display text-2xl text-(--color-title) sm:text-3xl">
-          Criado por Lily Anjos
-        </h2>
-        <p className="mt-4 text-base leading-relaxed text-(--color-text) sm:text-lg">
-          Decoradora, designer de eventos e professora, Lily reuniu nesta
-          coleção sua experiência profissional, pesquisa e curadoria para
-          facilitar o trabalho de decoradores e floristas.
-        </p>
+        <Reveal>
+          <h2 className="font-display text-2xl text-(--color-title) sm:text-3xl">
+            Criado por Lily Anjos
+          </h2>
+          <p className="mt-4 text-base leading-relaxed text-(--color-text) sm:text-lg">
+            Decoradora, designer de eventos e professora, Lily reuniu nesta
+            coleção sua experiência profissional, pesquisa e curadoria para
+            facilitar o trabalho de decoradores e floristas.
+          </p>
+        </Reveal>
 
-        <ul className="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-3">
-          {infos.map((info, i) => (
-            <li
-              key={i}
-              className="flex flex-col items-center gap-3 rounded-2xl border border-(--color-card-border) bg-(--color-card) px-4 py-6"
-            >
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="var(--color-gold)"
-                strokeWidth="1.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="h-7 w-7"
-                aria-hidden="true"
+        <Reveal delayMs={120}>
+          <ul className="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-3">
+            {infos.map((info, i) => (
+              <li
+                key={i}
+                className="flex flex-col items-center gap-3 rounded-2xl border border-(--color-card-border) bg-(--color-card) px-4 py-6"
               >
-                {info.icon}
-              </svg>
-              <span className="text-sm text-(--color-text)">{info.text}</span>
-            </li>
-          ))}
-        </ul>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="var(--color-gold)"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="h-7 w-7"
+                  aria-hidden="true"
+                >
+                  {info.icon}
+                </svg>
+                <span className="text-sm text-(--color-text)">{info.text}</span>
+              </li>
+            ))}
+          </ul>
+        </Reveal>
       </div>
     </section>
   );

@@ -59,11 +59,12 @@ export default function Carousel({
         onTouchEnd={onTouchEnd}
       >
         <Image
+          key={current.src}
           src={current.src}
           alt={current.alt}
           fill
           sizes={sizes}
-          className="object-contain"
+          className="animate-fade-in object-contain"
           priority={priority && index === 0}
           loading={priority && index === 0 ? undefined : "eager"}
         />

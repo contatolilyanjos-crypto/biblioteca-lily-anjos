@@ -1,6 +1,7 @@
 import { colecao, volumes } from "@/data/products";
 import CheckoutButton from "./CheckoutButton";
 import Carousel from "./Carousel";
+import Reveal from "./Reveal";
 
 const imagensCarrosselColecao = [
   {
@@ -18,15 +19,15 @@ export default function CollectionOffer() {
     >
       <div className="mx-auto max-w-5xl">
         <div className="grid items-center gap-8 md:grid-cols-2 md:gap-14">
-          <div className="mx-auto w-full max-w-sm md:max-w-none md:order-2">
+          <Reveal className="mx-auto w-full max-w-sm md:max-w-none md:order-2">
             <Carousel
               images={imagensCarrosselColecao}
               label="Imagens da Biblioteca Lily Anjos completa"
               sizes="(min-width: 768px) 480px, 90vw"
             />
-          </div>
+          </Reveal>
 
-          <div className="text-center md:order-1 md:text-left">
+          <Reveal delayMs={120} className="text-center md:order-1 md:text-left">
             <span className="inline-block rounded-full border border-(--color-gold)/50 bg-(--color-card) px-4 py-1.5 text-xs font-semibold tracking-wide text-(--color-gold) sm:text-sm">
               {colecao.selo}
             </span>
@@ -67,7 +68,7 @@ export default function CollectionOffer() {
                 confirmação do pagamento
               </p>
             </div>
-          </div>
+          </Reveal>
         </div>
       </div>
     </section>

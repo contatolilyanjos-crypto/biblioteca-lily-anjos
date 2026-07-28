@@ -21,20 +21,32 @@ export default function Hero() {
       />
 
       <div className="mx-auto grid max-w-5xl items-center gap-8 md:grid-cols-2 md:gap-12">
-        <div className="text-center md:text-left">
-          <p className="font-display text-base tracking-[0.2em] text-(--color-gold) sm:text-lg">
+        <div className="order-2 text-center md:order-1 md:text-left">
+          <p
+            className="font-display animate-fade-up text-base tracking-[0.2em] text-(--color-gold) sm:text-lg"
+            style={{ animationDelay: "150ms" }}
+          >
             Biblioteca Lily Anjos
           </p>
-          <h1 className="font-display text-balance mt-3 text-3xl leading-tight text-(--color-title) sm:text-4xl md:text-5xl">
+          <h1
+            className="font-display text-balance animate-fade-up mt-3 text-3xl leading-tight text-(--color-title) sm:text-4xl md:text-5xl"
+            style={{ animationDelay: "150ms" }}
+          >
             Centenas de flores, folhagens e elementos da decoração de eventos
             reunidos em um só lugar.
           </h1>
-          <p className="mt-5 text-base leading-relaxed text-(--color-text) sm:text-lg">
+          <p
+            className="animate-fade-up mt-5 text-base leading-relaxed text-(--color-text) sm:text-lg"
+            style={{ animationDelay: "300ms" }}
+          >
             Uma biblioteca visual para você conhecer, comparar e escolher com
             facilidade os elementos que darão vida às suas composições.
           </p>
 
-          <ul className="mt-6 flex flex-wrap justify-center gap-x-2 gap-y-2 text-xs text-(--color-muted) sm:text-sm md:justify-start">
+          <ul
+            className="animate-fade-up mt-6 flex flex-wrap justify-center gap-x-2 gap-y-2 text-xs text-(--color-muted) sm:text-sm md:justify-start"
+            style={{ animationDelay: "300ms" }}
+          >
             {destaques.map((item, i) => (
               <li key={item} className="flex items-center gap-2">
                 <span className="rounded-full border border-(--color-card-border) bg-(--color-card) px-3 py-1">
@@ -47,7 +59,10 @@ export default function Hero() {
             ))}
           </ul>
 
-          <div className="mt-8 flex justify-center md:justify-start">
+          <div
+            className="animate-fade-up mt-8 flex justify-center md:justify-start"
+            style={{ animationDelay: "450ms" }}
+          >
             <a
               href="#colecao"
               className="inline-flex items-center justify-center rounded-full bg-(--color-green) px-8 py-3.5 text-sm font-semibold tracking-wide text-white shadow-lg transition-colors hover:bg-(--color-green-hover) sm:text-base"
@@ -57,7 +72,7 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="relative mx-auto w-full max-w-sm md:max-w-none">
+        <div className="animate-fade-up order-1 mx-auto w-full max-w-sm md:order-2 md:max-w-none">
           <div className="overflow-hidden rounded-2xl border border-(--color-card-border) bg-(--color-card) shadow-2xl">
             <Image
               src={colecao.imagemHero}

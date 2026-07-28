@@ -1,6 +1,7 @@
 import { colecao } from "@/data/products";
 import CheckoutButton from "./CheckoutButton";
 import FloralCorner from "./FloralCorner";
+import Reveal from "./Reveal";
 
 export default function FinalCta() {
   return (
@@ -11,7 +12,7 @@ export default function FinalCta() {
         className="pointer-events-none absolute -bottom-2 -right-2 h-24 w-24 sm:h-32 sm:w-32"
       />
 
-      <div className="mx-auto max-w-2xl text-center">
+      <Reveal className="mx-auto max-w-2xl text-center">
         <h2 className="font-display text-balance text-2xl text-(--color-title) sm:text-3xl md:text-4xl">
           Tenha centenas de referências sempre ao seu alcance.
         </h2>
@@ -36,7 +37,7 @@ export default function FinalCta() {
             label="QUERO A BIBLIOTECA COMPLETA"
           />
         </div>
-      </div>
+      </Reveal>
     </section>
   );
 }
