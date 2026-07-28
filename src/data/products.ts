@@ -28,7 +28,7 @@ export const colecao = {
   precoAVista: "Por R$ 224,90 à vista",
   parcelamento: "ou 12x de R$ 23,26",
   linkCheckout: "https://pay.hotmart.com/W106909386M?off=5wn31j8a",
-  ctaLabel: "QUERO OS 5 VOLUMES COM DESCONTO",
+  ctaLabel: "QUERO OS 5 VOLUMES DIGITAIS COM DESCONTO",
 };
 
 export const volumes: Volume[] = [

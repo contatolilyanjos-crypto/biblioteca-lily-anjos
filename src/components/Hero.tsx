@@ -38,7 +38,7 @@ export default function Hero() {
             className="animate-fade-up mt-5 text-base leading-relaxed text-(--color-text) sm:text-lg"
             style={{ animationDelay: "300ms" }}
           >
-            Uma biblioteca visual para você conhecer, comparar e escolher com
+            Uma biblioteca digital para você conhecer, comparar e escolher com
             facilidade os elementos que darão vida às suas composições.
           </p>
 
@@ -59,15 +59,18 @@ export default function Hero() {
           </ul>
 
           <div
-            className="animate-fade-up mt-8 flex justify-center md:justify-start"
+            className="animate-fade-up mt-8 flex flex-col items-center gap-3 md:items-start"
             style={{ animationDelay: "450ms" }}
           >
             <a
               href="#colecao"
               className="inline-flex items-center justify-center rounded-full bg-(--color-green) px-8 py-3.5 text-sm font-semibold tracking-wide text-white shadow-lg transition-colors hover:bg-(--color-green-hover) sm:text-base"
             >
-              QUERO CONHECER A COLEÇÃO
+              QUERO CONHECER A COLEÇÃO DIGITAL
             </a>
+            <p className="text-xs text-(--color-muted)">
+              Coleção 100% digital. Acesso imediato após a compra.
+            </p>
           </div>
         </div>
 
