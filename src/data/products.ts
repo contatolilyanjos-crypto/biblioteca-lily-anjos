@@ -36,7 +36,7 @@ export const volumes: Volume[] = [
     titulo: "Volume 1 — Flores de Corte",
     descricao:
       "94 espécies com fotos, cores, tamanhos, disponibilidade, custos, cuidados e aplicações.",
-    imagem: "/produtos/volume-1-flores-de-corte.png",
+    imagem: "/produtos/volume-1-flores-de-corte.jpg",
     precoAVista: "R$ 59,90 à vista",
     parcelamento: "ou 12x de R$ 6,20",
     linkCheckout: "https://pay.hotmart.com/L106908323G?off=9ype1fn2",
@@ -66,7 +66,7 @@ export const volumes: Volume[] = [
     titulo: "Volume 2 — Folhagens, Sementes e Frutos",
     descricao:
       "108 folhagens e 45 sementes e frutos, com identificação, características, cuidados e aplicações.",
-    imagem: "/produtos/volume-2-folhagens-sementes-frutos.png",
+    imagem: "/produtos/volume-2-folhagens-sementes-frutos.jpg",
     precoAVista: "R$ 59,90 à vista",
     parcelamento: "ou 12x de R$ 6,20",
     linkCheckout: "https://pay.hotmart.com/A106908702D?off=nchlxtij",
@@ -96,7 +96,7 @@ export const volumes: Volume[] = [
     titulo: "Volume 3 — Flores e Plantas Desidratadas",
     descricao:
       "91 elementos secos, desidratados, preservados e alvejados, com diferenças, cuidados e aplicações.",
-    imagem: "/produtos/volume-3-flores-plantas-desidratadas.png",
+    imagem: "/produtos/volume-3-flores-plantas-desidratadas.jpg",
     precoAVista: "R$ 59,90 à vista",
     parcelamento: "ou 12x de R$ 6,20",
     linkCheckout: "https://pay.hotmart.com/Q106908821K?off=8clssgdp",
@@ -126,7 +126,7 @@ export const volumes: Volume[] = [
     titulo: "Volume 4 — Plantas de Vaso",
     descricao:
       "Mais de 70 espécies, com orientações sobre manutenção, reutilização e aplicação em eventos.",
-    imagem: "/produtos/volume-4-plantas-de-vaso.png",
+    imagem: "/produtos/volume-4-plantas-de-vaso.jpg",
     precoAVista: "R$ 59,90 à vista",
     parcelamento: "ou 12x de R$ 6,20",
     linkCheckout: "https://pay.hotmart.com/F106908936R?off=z70x8qoj",
@@ -156,7 +156,7 @@ export const volumes: Volume[] = [
     titulo: "Volume 5 — Frutas na Decoração de Eventos",
     descricao:
       "45 frutas, técnicas de utilização, conservação e sugestões de composições para arranjos, mesas e cenários.",
-    imagem: "/produtos/volume-5-frutas-decoracao-eventos.png",
+    imagem: "/produtos/volume-5-frutas-decoracao-eventos.jpg",
     precoAVista: "R$ 59,90 à vista",
     parcelamento: "ou 12x de R$ 6,20",
     linkCheckout: "https://pay.hotmart.com/V106909031O?off=cz8jdnvz",
